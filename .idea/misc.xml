@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/drawable/ic_nav_settings.xml" value="0.1" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout-v23/activity_intro.xml" value="0.19230769230769232" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/activity_earthquake_list.xml" value="0.3517457008858781" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/activity_intro.xml" value="0.12280701754385964" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/activity_main.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/activity_quake_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/activity_settings.xml" value="0.264" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/activity_splash.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/adver.xml" value="0.1" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/app_bar_main.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/app_bar_main_2.xml" value="0.2" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/content_main.xml" value="0.2" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/content_main_2.xml" value="0.12280701754385964" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/item.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/layout/nav_header_main.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/Yael1/StudioProjects/Tsunami_Draft/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

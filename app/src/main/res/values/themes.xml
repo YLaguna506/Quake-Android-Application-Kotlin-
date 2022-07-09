@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Tsunami_Draft" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Tsunami_Draft.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Tsunami_Draft.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Tsunami_Draft.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RoundedSquare">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="Circlee">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Night Mode -->
+    <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/night_mode</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+    <!-- Notifications -->
+    <style name="notificationsSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/notifications</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+    <!-- Private Account -->
+    <style name="privateSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/private_account</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+</resources>

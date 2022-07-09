@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "769856120368",
+    "firebase_url": "https://tsunami-alert-ab987-default-rtdb.firebaseio.com",
+    "project_id": "tsunami-alert-ab987",
+    "storage_bucket": "tsunami-alert-ab987.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769856120368:android:7ec447b5d3360930d0aff5",
+        "android_client_info": {
+          "package_name": "com.example.tsunamialert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769856120368-85k3mj49cfff2g8sc8f5o8ctpmb7h98a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfYkyUUbZjnTnoEKPE_KIK-K7kpLKFZ4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769856120368-85k3mj49cfff2g8sc8f5o8ctpmb7h98a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769856120368:android:2c260ff2c413255ed0aff5",
+        "android_client_info": {
+          "package_name": "yael.laguna.tsunami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769856120368-85k3mj49cfff2g8sc8f5o8ctpmb7h98a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfYkyUUbZjnTnoEKPE_KIK-K7kpLKFZ4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769856120368-85k3mj49cfff2g8sc8f5o8ctpmb7h98a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769856120368:android:dcc8f85c22843596d0aff5",
+        "android_client_info": {
+          "package_name": "yael.laguna.tsunami_draft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769856120368-85k3mj49cfff2g8sc8f5o8ctpmb7h98a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfYkyUUbZjnTnoEKPE_KIK-K7kpLKFZ4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769856120368-85k3mj49cfff2g8sc8f5o8ctpmb7h98a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

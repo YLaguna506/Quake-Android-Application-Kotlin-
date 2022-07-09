@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO (Step 2: Create a content_main xml file.)-->
+<!--START-->
+<!--Move the activity_main xml file code to this file.-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp">
+
+        <fragment
+            android:id="@+id/maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quake_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981"
+        tools:listitem="@layout/item" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/advertisements_list"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/quake_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lays2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circleImageView1"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ED2B11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.222"
+                app:shapeAppearanceOverlay="@style/Circlee" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circleImageView2"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FF9800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.454"
+                app:shapeAppearanceOverlay="@style/Circlee" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circleImageView3"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFEB3B"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.707"
+                app:shapeAppearanceOverlay="@style/Circlee" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circleImageView4"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#21B846"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.949"
+                app:shapeAppearanceOverlay="@style/Circlee" />
+
+            <LinearLayout
+                android:layout_width="332dp"
+                android:layout_height="115dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/lays2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView1"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                //ALERT LEVELS
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALERT LEVELS "
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                //RED
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red: "
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/x_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Warning "
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                //ORANGE
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Orange: "
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/x_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:text="Advisory "
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                //YELLOW
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yellow: "
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/x_yellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:text="Watch "
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                //GREEN
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green: "
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/x_green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:text="Information Statement "
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--END-->

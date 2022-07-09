@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tsunami Alert</string>
+
+    <string name="intro_text_title">Welcome to Tsunami Alert!</string>
+    <string name="intro_text_description">Receive Tsunami and Earthquake alerts immediately through Tsunami Alert.</string>
+
+    <string name="nav_home">Home Page</string>
+    <string name="nav_quakelist">Earthquakes List</string>
+    <string name="nav_report">Report New Earthquake</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="next">NEXT</string>
+    <string name="pr_seismic_network">PR SEISMIC NETWORK</string>
+    <string name="quake_list">Quake List</string>
+
+
+</resources>

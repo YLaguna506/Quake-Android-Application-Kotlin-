@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO (Step 4: Design the intro screen layout as per our requirement.)-->
+<!--START-->
+<!--The values for the drawable items, dimen, string and color values are added in their respective folders and files.-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".IntroActivity">
+
+    <TextView
+        android:id="@+id/tv_app_name_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/intro_screen_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TODO (Step 8: Button background files are added in the drawable folder.)-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="408dp"
+        android:layout_height="194dp"
+        android:layout_margin="2dp"
+        android:layout_marginTop="4dp"
+        android:background="#11BCFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name_intro">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginEnd="4dp"
+        android:paddingStart="170dp"
+        android:src="@drawable/lighthouse_green"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentContainerView"
+        app:layout_constraintEnd_toEndOf="@+id/fragmentContainerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name_intro"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/fragmentContainerView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name_intro"
+        app:srcCompat="@drawable/cloud_1" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="2dp"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/waves_gif"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentContainerView"
+        app:layout_constraintEnd_toEndOf="@+id/fragmentContainerView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fragmentContainerView" />
+
+    <TextView
+        android:id="@+id/intro_semititle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_text_title"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/lets_get_started_text_size"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/intro_text_line_spacing_extra"
+        android:text="@string/intro_text_description"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/intro_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro_semititle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/intro_text_line_spacing_extra"
+        android:text="Note: This app only uses significant earthquakes data from RSPR."
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/intro_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <android.widget.Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_button_rounded"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_paddingTopBottom"
+        android:paddingBottom="@dimen/btn_paddingTopBottom"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--END-->
